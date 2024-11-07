@@ -4,9 +4,11 @@
 
 Available filters: carrier, reference, invoice_number, status, date_start, date_end)
 
+Available sorts: id, updated_at
+
 ###### Copy as curl
 ``` shell
-curl --request GET --header 'Authorization: Bearer flx_...' --url 'https://2.flixlog.com/api/orders'
+curl --request GET --header 'Authorization: Bearer flx_...' --url 'https://2.flixlog.com/api/orders?sort=id:asc'
 ```
 
 ###### Resposta
