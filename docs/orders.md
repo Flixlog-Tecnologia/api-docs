@@ -11,7 +11,7 @@ Available sorts: id, updated_at
 curl --request GET --header 'Authorization: Bearer flx_...' --url 'https://2.flixlog.com/api/orders?sort=id:asc'
 ```
 
-Example JSON Response
+###### Example JSON Response
 ``` json
 {
   "pagination": {
@@ -84,7 +84,7 @@ Example JSON Response
 curl --request GET --header 'Authorization: Bearer flx_...' --url 'https://2.flixlog.com/api/orders/13'
 ```
 
-Example JSON Response
+###### Example JSON Response
 ``` json
 {
   "id": 13,
@@ -181,7 +181,7 @@ curl --request POST \
 }'
 ```
 
-Example JSON Response
+###### Example JSON Response
 ``` json
 {
   "id": 41,
@@ -261,7 +261,7 @@ curl --request POST \
   "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48bmZlUHJv\nYy..."
 }'
 ```
-Example JSON Response
+###### Example JSON Response
 ``` json
 {
   "id": 63,

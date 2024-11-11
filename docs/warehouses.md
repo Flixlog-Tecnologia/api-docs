@@ -7,7 +7,7 @@
 curl --request GET --header 'Authorization: Bearer flx_...' --url 'https://2.flixlog.com/api/warehouses'
 ```
 
-Example JSON Response
+###### Example JSON Response
 ``` json
 {
   "pagination": {
@@ -58,7 +58,7 @@ Example JSON Response
 curl --request GET --header 'Authorization: Bearer flx_...' --url 'https://2.flixlog.com/api/warehouses/1'
 ```
 
-Example JSON Response
+###### Example JSON Response
 ``` json
 {
   "id": 1,
@@ -116,7 +116,7 @@ curl --request POST \
 }'
 ```
 
-Example JSON Response
+###### Example JSON Response
 ``` json
 {
   "id": 20,
@@ -173,7 +173,7 @@ curl --request PATCH \
 }'
 ```
 
-Example JSON Response
+###### Example JSON Response
 ``` json
 {
   "id": 1,
