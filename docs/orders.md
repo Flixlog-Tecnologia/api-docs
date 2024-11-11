@@ -14,66 +14,66 @@ curl --request GET --header 'Authorization: Bearer flx_...' --url 'https://2.fli
 Example JSON Response
 ``` json
 {
-    "pagination": {
-        "prev_url": "/api/orders?page=",
-        "next_url": "/api/orders?page=2",
-        "count": 1,
-        "page": 1,
-        "next": null
-    },
-    "data": [
-        {
-            "id": 13,
-            "reference": "123",
-            "tracking_code": "FL4A3B2D5DF3FD-0001",
-            "carrier_tracking_code": null,
-            "status": "available_for_pickup",
-            "archived_at": null,
-            "delivered_at": null,
-            "out_for_delivery_at": null,
-            "pickuped_at": null,
-            "items": [],
-            "addressee": {
-                "id": 165,
-                "residential": null,
-                "name": "ANDRE SOFTWARE",
-                "email": "contato@andrekiffer.com.br",
-                "federal_tax": "93123663272",
-                "street": "Rua Arnaldo Pisseti",
-                "complement": "",
-                "neighborhood": "Bairro Alto",
-                "number": null,
-                "phone": "41995065196",
-                "city": "Curitiba",
-                "state": "PR",
-                "zip": "82820350",
-                "created_at": "2024-06-27T08:50:32.869-03:00",
-                "updated_at": "2024-06-27T08:50:32.869-03:00"
-            },
-            "created_at": "2024-06-27T08:50:32.871-03:00",
-            "updated_at": "2024-07-17T22:25:29.467-03:00",
-            "carrier": {
-                "id": 5,
-                "name": "Favorita",
-                "federal_tax": "12345678945783",
-                "link": {
-                    "_self": "/api/carriers/5"
-                }
-            },
-            "invoice": {
-                "id": 41,
-                "number": "19541",
-                "serie": "4",
-                "key": "43230503741819000106550040000195411767160405",
-                "link": {
-                    "_self": "/api/invoices/41"
-                }
-            },
-            "link": {
-                "_self": "/api/orders/13"
-            }
+  "pagination": {
+    "prev_url": "/api/orders?page=",
+    "next_url": "/api/orders?page=2",
+    "count": 1,
+    "page": 1,
+    "next": null
+  },
+  "data": [
+    {
+      "id": 13,
+      "reference": "123",
+      "tracking_code": "FL4A3B2D5DF3FD-0001",
+      "carrier_tracking_code": null,
+      "status": "available_for_pickup",
+      "archived_at": null,
+      "delivered_at": null,
+      "out_for_delivery_at": null,
+      "pickuped_at": null,
+      "items": [],
+      "addressee": {
+        "id": 165,
+        "residential": null,
+        "name": "ANDRE SOFTWARE",
+        "email": "contato@andrekiffer.com.br",
+        "federal_tax": "93123663272",
+        "street": "Rua Arnaldo Pisseti",
+        "complement": "",
+        "neighborhood": "Bairro Alto",
+        "number": null,
+        "phone": "41995065196",
+        "city": "Curitiba",
+        "state": "PR",
+        "zip": "82820350",
+        "created_at": "2024-06-27T08:50:32.869-03:00",
+        "updated_at": "2024-06-27T08:50:32.869-03:00"
+      },
+      "created_at": "2024-06-27T08:50:32.871-03:00",
+      "updated_at": "2024-07-17T22:25:29.467-03:00",
+      "carrier": {
+        "id": 5,
+        "name": "Favorita",
+        "federal_tax": "12345678945783",
+        "link": {
+          "_self": "/api/carriers/5"
         }
-    ]
+      },
+      "invoice": {
+        "id": 41,
+        "number": "19541",
+        "serie": "4",
+        "key": "43230503741819000106550040000195411767160405",
+        "link": {
+          "_self": "/api/invoices/41"
+        }
+      },
+      "link": {
+        "_self": "/api/orders/13"
+      }
+    }
+  ]
 }
 ```
 
@@ -144,7 +144,7 @@ Example JSON Response
 ###### Copy as curl
 ``` shell
 curl --request POST \
-  --url http://localhost:3001/api/orders \
+  --url https://2.flixlog.com/api/orders \
   --header 'Authorization: Bearer flx_...' \
   --header 'Content-Type: application/json' \
   --data '{

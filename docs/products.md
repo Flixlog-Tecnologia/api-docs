@@ -39,7 +39,7 @@ Example JSON Response
       "updated_at": "2024-11-11T02:52:06.696-03:00",
       "volume": 0.0068,
       "link": {
-        "_self": "https://2.flixlog.com/api/products/47"
+        "_self": "/api/products/47"
       }
     },
     {
@@ -61,7 +61,7 @@ Example JSON Response
       "updated_at": "2024-10-28T01:48:03.077-03:00",
       "volume": 0.0546,
       "link": {
-        "_self": "https://2.flixlog.com/api/products/46"
+        "_self": "/api/products/46"
       }
     }
   ]
@@ -96,7 +96,7 @@ Example JSON Response
   "updated_at": "2024-11-11T02:52:06.696-03:00",
   "volume": 0.0068,
   "link": {
-    "_self": "http://localhost:3001/api/products/47"
+    "_self": "/api/products/47"
   }
 }
 ```
@@ -106,7 +106,7 @@ Example JSON Response
 ###### Copy as curl
 ``` shell
 curl --request POST \
-  --url http://localhost:3001/api/products \
+  --url https://2.flixlog.com/api/products \
   --header 'Authorization: Bearer flx_...' \
   --header 'Content-Type: application/json' \
   --data '{
@@ -144,7 +144,7 @@ Example JSON Response
   "updated_at": "2024-11-11T03:00:01.140-03:00",
   "volume": 0.0068,
   "link": {
-    "_self": "http://localhost:3001/api/products/51"
+    "_self": "/api/products/51"
   }
 }
 ```
@@ -154,7 +154,7 @@ Example JSON Response
 ###### Copy as curl
 ``` shell
 ccurl --request PATCH \
-  --url http://localhost:3001/api/products/51 \
+  --url https://2.flixlog.com/api/products/51 \
   --header 'Authorization: Bearer flx_1f54cd1fd772f5f0eb560df6b0e3d7a' \
   --header 'Content-Type: application/json' \
   --data '{
@@ -195,7 +195,7 @@ Example JSON Response
   "updated_at": "2024-11-11T03:29:23.420-03:00",
   "volume": 0.0068,
   "link": {
-    "_self": "http://localhost:3001/api/products/51"
+    "_self": "/api/products/51"
   }
 }
 ```
