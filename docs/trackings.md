@@ -1,6 +1,6 @@
 ### Trackings
 
-#### GET Trackings by tracking code 
+#### GET Trackings by tracking code
 
 Available status:
 - in_transit
@@ -13,7 +13,7 @@ Available status:
 curl --request GET --header 'Authorization: Bearer flx_...' --url 'https://2.flixlog.com/api/trackings/FL3D049813B9AC-0001'
 ```
 
-###### Resposta
+Example JSON Response
 ``` json
 {
     "data": [

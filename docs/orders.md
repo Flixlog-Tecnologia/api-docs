@@ -11,7 +11,7 @@ Available sorts: id, updated_at
 curl --request GET --header 'Authorization: Bearer flx_...' --url 'https://2.flixlog.com/api/orders?sort=id:asc'
 ```
 
-###### Resposta
+Example JSON Response
 ``` json
 {
     "pagination": {
@@ -84,7 +84,7 @@ curl --request GET --header 'Authorization: Bearer flx_...' --url 'https://2.fli
 curl --request GET --header 'Authorization: Bearer flx_...' --url 'https://2.flixlog.com/api/orders/13'
 ```
 
-###### Resposta
+Example JSON Response
 ``` json
 {
 	"id": 13,
@@ -181,7 +181,7 @@ curl --request POST \
 }'
 ```
 
-###### Resposta
+Example JSON Response
 ``` json
 {
 	"id": 41,
@@ -261,7 +261,7 @@ curl --request POST \
 	"xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48bmZlUHJv\nYy..."
 }'
 ```
-###### Resposta
+Example JSON Response
 ``` json
 {
 	"id": 63,
@@ -286,9 +286,7 @@ curl --request POST \
 curl --request POST --header 'Authorization: Bearer flx_...' --url 'https://2.flixlog.com/api/orders/13/cancel'
 ```
 
-###### Resposta
-``` json
-```
+No parameters required. Returns 204 No Content if successful.
 
 #### POST Mark as In Transit
 
@@ -297,9 +295,7 @@ curl --request POST --header 'Authorization: Bearer flx_...' --url 'https://2.fl
 curl --request POST --header 'Authorization: Bearer flx_...' --url 'https://2.flixlog.com/api/orders/13/in_transit'
 ```
 
-###### Resposta
-``` json
-```
+No parameters required. Returns 204 No Content if successful.
 
 #### POST Mark as Delivered
 
@@ -308,9 +304,7 @@ curl --request POST --header 'Authorization: Bearer flx_...' --url 'https://2.fl
 curl --request POST --header 'Authorization: Bearer flx_...' --url 'https://2.flixlog.com/api/orders/13/deliver'
 ```
 
-###### Resposta
-``` json
-```
+No parameters required. Returns 204 No Content if successful.
 
 #### POST Archive order
 
@@ -319,9 +313,7 @@ curl --request POST --header 'Authorization: Bearer flx_...' --url 'https://2.fl
 curl --request POST --header 'Authorization: Bearer flx_...' --url 'https://2.flixlog.com/api/orders/13/to_archive'
 ```
 
-###### Resposta
-``` json
-```
+No parameters required. Returns 204 No Content if successful.
 
 #### POST Unarchive order
 
@@ -330,6 +322,4 @@ curl --request POST --header 'Authorization: Bearer flx_...' --url 'https://2.fl
 curl --request POST --header 'Authorization: Bearer flx_...' --url 'https://2.flixlog.com/api/orders/13/unarchive'
 ```
 
-###### Resposta
-``` json
-```
+No parameters required. Returns 204 No Content if successful.

@@ -9,7 +9,7 @@ Available sorts: id
 curl --request GET --header 'Authorization: Bearer flx_...' --url 'https://2.flixlog.com/api/products?page=1&sort=id:desc'
 ```
 
-###### Resposta
+Example JSON Response
 ``` json
 {
 	"pagination": {
@@ -75,7 +75,7 @@ curl --request GET --header 'Authorization: Bearer flx_...' --url 'https://2.fli
 curl --request GET --header 'Authorization: Bearer flx_...' --url 'https://2.flixlog.com/api/products/47'
 ```
 
-###### Resposta
+Example JSON Response
 ``` json
 {
 	"id": 47,
@@ -123,7 +123,7 @@ curl --request POST \
 }'
 ```
 
-###### Resposta
+Example JSON Response
 ``` json
 {
 	"id": 51,
@@ -174,7 +174,7 @@ ccurl --request PATCH \
 }'
 ```
 
-###### Resposta
+Example JSON Response
 ``` json
 {
 	"id": 51,
