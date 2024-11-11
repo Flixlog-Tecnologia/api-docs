@@ -155,7 +155,7 @@ curl --request POST \
 ``` shell
 ccurl --request PATCH \
   --url https://2.flixlog.com/api/products/51 \
-  --header 'Authorization: Bearer flx_1f54cd1fd772f5f0eb560df6b0e3d7a' \
+  --header 'Authorization: Bearer flx_...' \
   --header 'Content-Type: application/json' \
   --data '{
     "reference": "SKU1234",
