@@ -139,8 +139,118 @@ curl --request GET --header 'Authorization: Bearer flx_...' --url 'https://2.fli
 }
 ```
 
+#### POST Create Order
+
+###### Copy as curl
+``` shell
+curl --request POST \
+  --url http://localhost:3001/api/orders \
+  --header 'Authorization: Bearer flx_...' \
+  --header 'Content-Type: application/json' \
+  --data '{
+    "reference": "FLIX123",
+    "addressee_attributes": {
+        "name": "André Kiffer",
+        "federal_tax": "93123663272",
+        "email": "andre@flixlog.com",
+        "phone": "41995065196",
+        "street": "AL 101 Norte",
+        "number": "1251",
+        "neighborhood": "Centro",
+        "city": "São Paulo",
+        "state": "SP",
+        "zip": "05050100"
+    },
+    "items": [
+        {
+            "reference": "SKU123",
+            "price": 10,
+						"width": 0.1,
+						"height": 0.1,
+						"length": 0.1,
+					  "weight": 20,
+						"quantity": 2
+        },
+			{
+				"product_id": 51,
+				"quantity": 2
+        }
+    ],
+    "carrier_id": 5,
+    "warehouse_id": 20
+}'
+```
+
+###### Resposta
+``` json
+{
+	"id": 41,
+	"reference": "FLIX123",
+	"status": "initial",
+	"archived_at": null,
+	"delivered_at": null,
+	"out_for_delivery_at": null,
+	"pickuped_at": null,
+	"items": [
+		{
+			"id": 172,
+			"reference": "SKU123",
+			"product_id": null,
+			"tms_order_id": 41,
+			"price": "10.0",
+			"weight": "20.0",
+			"volume": "0.002",
+			"quantity": 2,
+			"created_at": "2024-11-11T03:01:34.582-03:00",
+			"updated_at": "2024-11-11T03:01:34.582-03:00",
+			"volumes": [
+				{
+					"height": 0.1,
+					"length": 0.1,
+					"width": 0.1
+				}
+			]
+		},
+		{
+			"id": 173,
+			"reference": "SKU1234",
+			"product_id": 51,
+			"tms_order_id": 41,
+			"price": "150.0",
+			"weight": "151.0",
+			"volume": "0.0068",
+			"quantity": 2,
+			"created_at": "2024-11-11T03:01:34.585-03:00",
+			"updated_at": "2024-11-11T03:01:34.585-03:00",
+			"volumes": [
+				{
+					"height": 0.15,
+					"length": 0.15,
+					"width": 0.15,
+					"quantity": 2
+				}
+			]
+		}
+	],
+	"addressee_id": 204,
+	"warehouse_id": 20,
+	"company_id": 1,
+	"created_by_id": 1,
+	"created_at": "2024-11-11T03:01:34.557-03:00",
+	"updated_at": "2024-11-11T03:01:34.557-03:00",
+	"invoice_id": null,
+	"supplier_invoice_id": null,
+	"tracking_code": "FL5A5D14E6E046-0001",
+	"carrier_id": 5,
+	"review_id": null,
+	"selected_rate_id": null,
+	"leadtime": 0,
+	"carrier_tracking_code": null
+}
+```
+
 #### POST Send Invoice (NFe)
-Send invoice xml encoded in base64[https://en.wikipedia.org/wiki/Base64] 
+Send invoice xml encoded in base64[https://en.wikipedia.org/wiki/Base64]
 
 ###### Copy as curl
 ``` shell
