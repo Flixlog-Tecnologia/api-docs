@@ -306,6 +306,16 @@ curl --request POST --header 'Authorization: Bearer flx_...' --url 'https://2.fl
 
 No parameters required. Returns 204 No Content if successful.
 
+#### POST Mark as In Return To Sender
+
+###### Copy as curl
+``` shell
+curl --request POST --header 'Authorization: Bearer flx_...' --url 'https://2.flixlog.com/api/orders/13/return'
+```
+
+No parameters required. Returns 204 No Content if successful.
+
+
 #### POST Archive order
 
 ###### Copy as curl
