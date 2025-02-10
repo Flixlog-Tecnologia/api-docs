@@ -4,7 +4,7 @@
 
 ###### Copy as curl
 ``` shell
-curl --request GET --header 'Authorization: Bearer flx_...' --url 'https://2.flixlog.com/api/warehouses'
+curl --request GET --header 'Authorization: Bearer flx_...' --url 'https://api.lixlog.com/v1/warehouses'
 ```
 
 ###### Example JSON Response
@@ -55,7 +55,7 @@ curl --request GET --header 'Authorization: Bearer flx_...' --url 'https://2.fli
 
 ###### Copy as curl
 ``` shell
-curl --request GET --header 'Authorization: Bearer flx_...' --url 'https://2.flixlog.com/api/warehouses/1'
+curl --request GET --header 'Authorization: Bearer flx_...' --url 'https://api.lixlog.com/v1/warehouses/1'
 ```
 
 ###### Example JSON Response
@@ -96,7 +96,7 @@ curl --request GET --header 'Authorization: Bearer flx_...' --url 'https://2.fli
 ###### Copy as curl
 ``` shell
 curl --request POST \
-  --url https://2.flixlog.com/api/warehouses \
+  --url https://api.lixlog.com/v1/warehouses \
   --header 'Authorization: Bearer flx_...' \
   --header 'Content-Type: application/json' \
   --data '{
@@ -154,7 +154,7 @@ curl --request POST \
 ###### Copy as curl
 ``` shell
 curl --request PATCH \
-  --url https://2.flixlog.com/api/warehouses/1 \
+  --url https://api.lixlog.com/v1/warehouses/1 \
   --header 'Authorization: Bearer flx_...' \
   --header 'Content-Type: application/json' \
   --data '{

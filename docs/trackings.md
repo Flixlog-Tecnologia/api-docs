@@ -10,7 +10,7 @@ Available status:
 
 ###### Copy as curl
 ``` shell
-curl --request GET --header 'Authorization: Bearer flx_...' --url 'https://2.flixlog.com/api/trackings/FL3D049813B9AC-0001'
+curl --request GET --header 'Authorization: Bearer flx_...' --url 'https://api.lixlog.com/v1/trackings/FL3D049813B9AC-0001'
 ```
 
 ###### Example JSON Response

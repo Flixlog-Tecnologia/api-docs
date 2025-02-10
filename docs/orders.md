@@ -8,7 +8,7 @@ Available sorts: id, updated_at
 
 ###### Copy as curl
 ``` shell
-curl --request GET --header 'Authorization: Bearer flx_...' --url 'https://2.flixlog.com/api/orders?sort=id:asc'
+curl --request GET --header 'Authorization: Bearer flx_...' --url 'https://api.lixlog.com/v1/orders?sort=id:asc'
 ```
 
 ###### Example JSON Response
@@ -81,7 +81,7 @@ curl --request GET --header 'Authorization: Bearer flx_...' --url 'https://2.fli
 
 ###### Copy as curl
 ``` shell
-curl --request GET --header 'Authorization: Bearer flx_...' --url 'https://2.flixlog.com/api/orders/13'
+curl --request GET --header 'Authorization: Bearer flx_...' --url 'https://api.lixlog.com/v1/orders/13'
 ```
 
 ###### Example JSON Response
@@ -144,7 +144,7 @@ curl --request GET --header 'Authorization: Bearer flx_...' --url 'https://2.fli
 ###### Copy as curl
 ``` shell
 curl --request POST \
-  --url https://2.flixlog.com/api/orders \
+  --url https://api.lixlog.com/v1/orders \
   --header 'Authorization: Bearer flx_...' \
   --header 'Content-Type: application/json' \
   --data '{
@@ -254,7 +254,7 @@ curl --request POST \
 ###### Copy as curl
 ``` shell
 curl --request PATCH \
-  --url https://2.flixlog.com/api/orders/13 \
+  --url https://api.lixlog.com/v1/orders/13 \
   --header 'Authorization: Bearer flx_...' \
   --header 'Content-Type: application/json' \
   --data '{
@@ -337,7 +337,7 @@ Send invoice xml encoded in base64[https://en.wikipedia.org/wiki/Base64]
 ``` shell
 curl --request POST \
   --header 'Authorization: Bearer flx_...' \
-  --url https://2.flixlog.com/api/orders/13/invoice \
+  --url https://api.lixlog.com/v1/orders/13/invoice \
   --data '{
   "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48bmZlUHJv\nYy..."
 }'
@@ -364,7 +364,7 @@ curl --request POST \
 
 ###### Copy as curl
 ``` shell
-curl --request POST --header 'Authorization: Bearer flx_...' --url 'https://2.flixlog.com/api/orders/13/cancel'
+curl --request POST --header 'Authorization: Bearer flx_...' --url 'https://api.lixlog.com/v1/orders/13/cancel'
 ```
 
 No parameters required. Returns 204 No Content if successful.
@@ -373,7 +373,7 @@ No parameters required. Returns 204 No Content if successful.
 
 ###### Copy as curl
 ``` shell
-curl --request POST --header 'Authorization: Bearer flx_...' --url 'https://2.flixlog.com/api/orders/13/in_transit'
+curl --request POST --header 'Authorization: Bearer flx_...' --url 'https://api.lixlog.com/v1/orders/13/in_transit'
 ```
 
 No parameters required. Returns 204 No Content if successful.
@@ -382,7 +382,7 @@ No parameters required. Returns 204 No Content if successful.
 
 ###### Copy as curl
 ``` shell
-curl --request POST --header 'Authorization: Bearer flx_...' --url 'https://2.flixlog.com/api/orders/13/deliver'
+curl --request POST --header 'Authorization: Bearer flx_...' --url 'https://api.lixlog.com/v1/orders/13/deliver'
 ```
 
 No parameters required. Returns 204 No Content if successful.
@@ -391,7 +391,7 @@ No parameters required. Returns 204 No Content if successful.
 
 ###### Copy as curl
 ``` shell
-curl --request POST --header 'Authorization: Bearer flx_...' --url 'https://2.flixlog.com/api/orders/13/return'
+curl --request POST --header 'Authorization: Bearer flx_...' --url 'https://api.lixlog.com/v1/orders/13/return'
 ```
 
 No parameters required. Returns 204 No Content if successful.
@@ -401,7 +401,7 @@ No parameters required. Returns 204 No Content if successful.
 
 ###### Copy as curl
 ``` shell
-curl --request POST --header 'Authorization: Bearer flx_...' --url 'https://2.flixlog.com/api/orders/13/to_archive'
+curl --request POST --header 'Authorization: Bearer flx_...' --url 'https://api.lixlog.com/v1/orders/13/to_archive'
 ```
 
 No parameters required. Returns 204 No Content if successful.
@@ -410,7 +410,7 @@ No parameters required. Returns 204 No Content if successful.
 
 ###### Copy as curl
 ``` shell
-curl --request POST --header 'Authorization: Bearer flx_...' --url 'https://2.flixlog.com/api/orders/13/unarchive'
+curl --request POST --header 'Authorization: Bearer flx_...' --url 'https://api.lixlog.com/v1/orders/13/unarchive'
 ```
 
 No parameters required. Returns 204 No Content if successful.

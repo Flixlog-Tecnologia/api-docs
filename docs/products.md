@@ -6,7 +6,7 @@ Available sorts: id
 
 ###### Copy as curl
 ``` shell
-curl --request GET --header 'Authorization: Bearer flx_...' --url 'https://2.flixlog.com/api/products?page=1&sort=id:desc'
+curl --request GET --header 'Authorization: Bearer flx_...' --url 'https://api.lixlog.com/v1/products?page=1&sort=id:desc'
 ```
 
 ###### Example JSON Response
@@ -72,7 +72,7 @@ curl --request GET --header 'Authorization: Bearer flx_...' --url 'https://2.fli
 
 ###### Copy as curl
 ``` shell
-curl --request GET --header 'Authorization: Bearer flx_...' --url 'https://2.flixlog.com/api/products/47'
+curl --request GET --header 'Authorization: Bearer flx_...' --url 'https://api.lixlog.com/v1/products/47'
 ```
 
 ###### Example JSON Response
@@ -106,7 +106,7 @@ curl --request GET --header 'Authorization: Bearer flx_...' --url 'https://2.fli
 ###### Copy as curl
 ``` shell
 curl --request POST \
-  --url https://2.flixlog.com/api/products \
+  --url https://api.lixlog.com/v1/products \
   --header 'Authorization: Bearer flx_...' \
   --header 'Content-Type: application/json' \
   --data '{
@@ -154,7 +154,7 @@ curl --request POST \
 ###### Copy as curl
 ``` shell
 ccurl --request PATCH \
-  --url https://2.flixlog.com/api/products/51 \
+  --url https://api.lixlog.com/v1/products/51 \
   --header 'Authorization: Bearer flx_...' \
   --header 'Content-Type: application/json' \
   --data '{
