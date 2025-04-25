@@ -233,7 +233,31 @@ curl --request POST \
     }
   ],
   "addressee_id": 204,
-  "warehouse_id": 20,
+  "warehouse": {
+    "id": 20,
+    "name": "Galpão Paripueira",
+    "address": {
+      "id": 4,
+      "residential": null,
+      "name": null,
+      "email": null,
+      "federal_tax": null,
+      "street": "Rua Rio Iriri",
+      "complement": "",
+      "neighborhood": "Bairro Alto",
+      "number": "270",
+      "phone": null,
+      "city": "Paripueira",
+      "state": "AL",
+      "zip": "57935000",
+      "created_at": "2025-02-05T05:45:21.631-03:00",
+      "updated_at": "2025-02-05T05:45:21.631-03:00",
+      "extra_federal_tax": null
+    },
+    "link": {
+      "_self": "/v1/warehouses/20"
+    }
+  },
   "company_id": 1,
   "created_by_id": 1,
   "created_at": "2024-11-11T03:01:34.557-03:00",
@@ -245,7 +269,11 @@ curl --request POST \
   "review_id": null,
   "selected_rate_id": null,
   "leadtime": 0,
-  "carrier_tracking_code": null
+  "carrier_tracking_code": null,
+  "link": {
+    "_self": "/v1/warehouses/20",
+    "tracking": "..."
+  }
 }
 ```
 
