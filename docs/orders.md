@@ -60,6 +60,31 @@ curl --request GET --header 'Authorization: Bearer flx_...' --url 'https://api.l
           "_self": "/api/carriers/5"
         }
       },
+      "warehouse": {
+        "id": 20,
+        "name": "Galpão Paripueira",
+        "address": {
+          "id": 4,
+          "residential": null,
+          "name": null,
+          "email": null,
+          "federal_tax": null,
+          "street": "Rua Rio Iriri",
+          "complement": "",
+          "neighborhood": "Bairro Alto",
+          "number": "270",
+          "phone": null,
+          "city": "Paripueira",
+          "state": "AL",
+          "zip": "57935000",
+          "created_at": "2025-02-05T05:45:21.631-03:00",
+          "updated_at": "2025-02-05T05:45:21.631-03:00",
+          "extra_federal_tax": null
+        },
+        "link": {
+          "_self": "/v1/warehouses/20"
+        }
+      },
       "invoice": {
         "id": 41,
         "number": "19541",
