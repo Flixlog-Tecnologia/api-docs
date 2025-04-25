@@ -95,7 +95,8 @@ curl --request GET --header 'Authorization: Bearer flx_...' --url 'https://api.l
         }
       },
       "link": {
-        "_self": "/api/orders/13"
+        "_self": "/api/orders/13",
+        "tracking": "https://trackingurl"
       }
     }
   ]
@@ -159,7 +160,8 @@ curl --request GET --header 'Authorization: Bearer flx_...' --url 'https://api.l
     }
   },
   "link": {
-    "_self": "/api/orders/13"
+    "_self": "/api/orders/13",
+    "tracking": "https://trackingurl"
   }
 }
 ```
@@ -297,7 +299,7 @@ curl --request POST \
   "carrier_tracking_code": null,
   "link": {
     "_self": "/v1/warehouses/20",
-    "tracking": "..."
+    "tracking": "https://trackingurl"
   }
 }
 ```
