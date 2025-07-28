@@ -433,6 +433,31 @@ curl --request POST --header 'Authorization: Bearer flx_...' --url 'https://api.
 
 No parameters required. Returns 204 No Content if successful.
 
+
+#### POST Mark as Out For Delivery
+
+###### Copy as curl
+``` shell
+curl --request POST --header 'Authorization: Bearer flx_...' --url 'https://api.lixlog.com/v1/orders/13/out_for_delivery'
+```
+
+No parameters required. Returns 204 No Content if successful.
+
+
+#### POST Mark as Delivery Failure
+
+###### Copy as curl
+``` shell
+curl --request POST --header 'Authorization: Bearer flx_...' --url 'https://api.lixlog.com/v1/orders/13/failure'
+  --data '{
+    "message": "Cliente ausente",
+    "occurred_at": "2023-05-12T10:28:51.000-03:00"
+  }'
+```
+
+No parameters required. Returns 204 No Content if successful.
+
+
 #### POST Mark as Delivered
 
 ###### Copy as curl
