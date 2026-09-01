@@ -2,7 +2,7 @@
 
 #### GET QuotationLogs
 
-Available filters: channel, date_state, date_end)
+Available filters: channel, date_state, date_end
 
 ###### Copy as curl
 ``` shell
