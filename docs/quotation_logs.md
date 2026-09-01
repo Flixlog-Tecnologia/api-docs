@@ -2,9 +2,11 @@
 
 #### GET QuotationLogs
 
+For performance reasons, this API does not provide total record counts or pagination metadata. The `page` attribute continues to working normally.
+
+
 Available filters: channel, date_state, date_end
 
-For performance reasons, this API does not provide total record counts or pagination metadata. The `page` attribute continues to function normally.
 
 ###### Copy as curl
 ``` shell
