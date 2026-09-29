@@ -8,6 +8,7 @@ For performance reasons, this API does not provide total record counts or pagina
 Available filters: channel, date_start, date_end
 
 
+
 ###### Copy as curl
 ``` shell
 curl --request GET --header 'Authorization: Bearer flx_...' --url 'https://api.lixlog.com/v1/quotation_logs?page=1'
