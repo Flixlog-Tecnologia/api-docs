@@ -6,9 +6,13 @@ Available filters: carrier, reference, invoice_number, status, date_start, date_
 
 Available sorts: id, updated_at
 
+Per page parameter: limit
+
+Max per: 100
+
 ###### Copy as curl
 ``` shell
-curl --request GET --header 'Authorization: Bearer flx_...' --url 'https://api.lixlog.com/v1/orders?sort=id:asc'
+curl --request GET --header 'Authorization: Bearer flx_...' --url 'https://api.lixlog.com/v1/orders?sort=id:asc&limit=20'
 ```
 
 ###### Example JSON Response

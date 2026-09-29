@@ -9,10 +9,14 @@ Available filters: channel, date_start, date_end, since_id
 
 Available sorts: id
 
+Per page parameter: limit
+
+Max per: 1000
+
 
 ###### Copy as curl
 ``` shell
-curl --request GET --header 'Authorization: Bearer flx_...' --url 'https://api.lixlog.com/v1/quotation_logs?page=1'
+curl --request GET --header 'Authorization: Bearer flx_...' --url 'https://api.lixlog.com/v1/quotation_logs?page=1&limit=1000'
 ```
 
 ###### Example JSON Response
