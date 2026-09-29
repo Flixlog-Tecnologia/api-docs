@@ -2,7 +2,7 @@
 
 #### GET Orders
 
-Available filters: carrier, reference, invoice_number, status, date_start, date_end)
+Available filters: carrier, reference, invoice_number, status, date_start, date_end, since_id
 
 Available sorts: id, updated_at
 
