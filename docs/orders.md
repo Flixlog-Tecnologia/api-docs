@@ -419,6 +419,38 @@ curl --request POST \
 }
 ```
 
+
+
+#### POST Send Supplier Invoice (NFe do Fornecedor)
+Send invoice xml encoded in base64[https://en.wikipedia.org/wiki/Base64]
+
+###### Copy as curl
+``` shell
+curl --request POST \
+  --header 'Authorization: Bearer flx_...' \
+  --url https://api.lixlog.com/v1/orders/13/supplier_invoice \
+  --data '{
+  "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48bmZlUHJv\nYy..."
+}'
+```
+###### Example JSON Response
+``` json
+{
+  "id": 63,
+  "number": "249493",
+  "serie": "2",
+  "key": "35230535085.........",
+  "amount": "1899.0",
+  "freight": "0.0",
+  "issue_date": "2023-05-12T10:28:51.000-03:00",
+  "document_type": "invoice",
+  "created_at": "2024-11-07T07:56:51.535-03:00",
+  "updated_at": "2024-11-07T07:56:51.546-03:00",
+  "weight": "27.0",
+  "volumes": 1
+}
+```
+
 #### POST Cancel Order
 
 ###### Copy as curl
