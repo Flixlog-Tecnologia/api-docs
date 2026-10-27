@@ -15,6 +15,7 @@ curl --request POST \
     "to": "82840310",
     "parcels": [
         {
+            "reference": "SKU123",
             "quantity": 1,
             "price": 15.0,
             "weight": 10,
